@@ -1,0 +1,45 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title=""
+             NavigationPage.HasNavigationBar="True"
+             BackgroundColor="#F7F7F7">
+
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Text="Principal"
+                 Priority="0"
+                 Order="Primary"
+                 Clicked="ToolbarItem_Clicked"/>
+
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout VerticalOptions="Fill"
+                         HorizontalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Label Text="Sobre o Aplicativo"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="#1A1A1A"
+               HorizontalOptions="CenterAndExpand"/>
+
+
+        <Label Text="Desenvolvedor: Welinson Mendes de Brito"
+               FontFamily="Kalam" 
+               FontSize="20"
+               TextColor="#1A1A1A"
+               HorizontalOptions="Start"/>
+
+
+        <Label Text="Ano de Desenvolvimento: 2024"
+               FontFamily="Kalam"  
+               FontSize="20"
+               TextColor="#1A1A1A"
+               HorizontalOptions="Start"/>
+       
+
+    </VerticalStackLayout>
+
+</ContentPage>

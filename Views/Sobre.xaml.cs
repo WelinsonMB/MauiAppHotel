@@ -1,16 +1,15 @@
 namespace MauiAppHotel.Views;
 
-public partial class ContratacaoHospedagem : ContentPage
+public partial class Sobre : ContentPage
 {
-	public ContratacaoHospedagem()
+	public Sobre()
 	{
 		InitializeComponent();
 	}
 
     private async void ToolbarItem_Clicked(object sender, EventArgs e)
     {
-		await Navigation.PushAsync(new Sobre());
+        await Navigation.PushAsync(new ContratacaoHospedagem());
 
     }
-
-}
+} 
