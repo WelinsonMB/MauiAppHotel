@@ -4,9 +4,9 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title=""
              NavigationPage.HasNavigationBar="True"
-             BackgroundColor="#F7F7F7">
+             BackgroundColor="#F7F7F7"> <!--Alteração de Cor do Background-->
 
-    <ContentPage.ToolbarItems>
+    <ContentPage.ToolbarItems> <!--Adição do Botão para a página Sobre !-->
 
         <ToolbarItem Text="Sobre"
                      Priority="0"
@@ -15,10 +15,11 @@
 
 
     </ContentPage.ToolbarItems>
-    <ScrollView>
+    
+    
+    <ScrollView> <!--Adição do item ScrollView para rolagem da aplicação-->
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
-
         <Label 
             Text="Cálculo da Diária"
             HorizontalOptions="Center"
@@ -69,7 +70,7 @@
                              Minimum="0"
                              Maximum="10"
                              Increment="1"
-                             WidthRequest="80"/>
+                             WidthRequest="80"/> <!--Adição do WidthRequest para melhor visualização-->
                 </Grid>
 
                 <Label Text="Escolha sua Suíte"
