@@ -4,7 +4,7 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title=""
              NavigationPage.HasNavigationBar="True"
-             BackgroundColor="#F7F7F7"> <!--Alteração de Cor do Background-->
+             BackgroundColor="#007BFF"> <!--Alteração de Cor do Background-->
 
     <ContentPage.ToolbarItems> <!--Adição do Botão para a página Sobre !-->
 
@@ -25,11 +25,11 @@
             HorizontalOptions="Center"
             FontFamily="Kalam"                                                  
             FontSize="40"
-            TextColor="#1A1A1A"/> <!-- Cor preta para o título -->
+            TextColor="White"/> <!-- Cor preta para o título -->
         
 
         <Frame Padding="20"
-               BorderColor="#007BFF"> <!-- Azul para a borda -->
+               BorderColor="#1A1A1A"> <!-- Azul para a borda -->
             <VerticalStackLayout Spacing="20">
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">
