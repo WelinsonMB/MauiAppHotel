@@ -1,12 +1,83 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HospedagemContratada"
-             Title="HospedagemContratada">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-</ContentPage>
+             NavigationPage.HasBackButton="False"
+             BackgroundColor="{StaticResource Primary}">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand" Spacing="20" Padding="15">
+
+            <!-- Título do Quarto -->
+            <Label x:Name="lblQuarto"
+                   TextColor="White"
+                   FontFamily="Kalam"
+                   FontSize="48"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold" />
+
+            <!-- Seção de Adultos e Crianças -->
+            <Frame Padding="15"
+                   BackgroundColor="White"
+                   CornerRadius="10"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <HorizontalStackLayout>
+                        <Label Text="Adultos:  " 
+                               TextColor="Black" 
+                               VerticalOptions="Center"/>
+                        <Label x:Name="lblAdultos" 
+                               TextColor="{StaticResource Font}"
+                               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Crianças: " 
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+                        <Label x:Name="lblCriancas" 
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Seção de Check-in, Check-out e Estadia -->
+            <Frame Padding="15"
+                   BackgroundColor="White"
+                   CornerRadius="10"
+                   HasShadow="True">
+                <Grid ColumnDefinitions="*, *"
+                      RowDefinitions="Auto, Auto">
+                    <Label Grid.Row="0" Grid.Column="0" Text="Check-in" TextColor="Black"/>
+                    <Label Grid.Row="0" Grid.Column="1" Text="Check-out" TextColor="Black"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" x:Name="lblCheckin" TextColor="Black"/>
+                    <Label Grid.Row="1" Grid.Column="1" x:Name="lblCheckout" TextColor="Black"/>
+                    
+                </Grid>
+            </Frame>
+
+            <!-- Seção do Valor Total -->
+            <Frame Padding="15"
+                   BackgroundColor="White"
+                   CornerRadius="10"
+                   HasShadow="True">
+                <HorizontalStackLayout Spacing="15" VerticalOptions="Center">
+                    <Label Text="Valor Total: " 
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="lblValorTotal" 
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+            <Button Text="Voltar"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

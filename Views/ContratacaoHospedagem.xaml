@@ -82,7 +82,8 @@
                 <Picker x:Name="pck_quarto"
                         Title="Selecione sua Acomodação"
                         Margin="0,10"
-                        FontAttributes="Bold"/>
+                        FontAttributes="Bold"
+                        ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10"
                        Margin="10">
@@ -93,6 +94,7 @@
                                    VerticalOptions="Center"
                                    TextColor="#1A1A1A"/>
                             <DatePicker x:Name="dtcpk_chekin"
+                                        DateSelected="dtcpk_chekin_DateSelected"
                                         Format="dd/MM/yyyy"
                                         WidthRequest="150"/>
                         </HorizontalStackLayout>
@@ -108,7 +110,7 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar"/>
+                <Button Text="Avançar" Clicked="Button_Clicked"/>
 
             </VerticalStackLayout>
         </Frame>

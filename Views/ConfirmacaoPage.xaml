@@ -1,0 +1,24 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.ConfirmacaoPage"
+             BackgroundColor="{StaticResource Primary}"
+             Padding="20">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Spacing="20">
+        <!-- Mensagem de Confirmação -->
+        <Label Text="Sua hospedagem foi concluída com sucesso!"
+               TextColor="White"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <!-- Botão de Fechar -->
+        <Button Text="Fechar"
+                TextColor="White"
+                BackgroundColor="{StaticResource Accent}"
+                CornerRadius="25"
+                HorizontalOptions="Center"
+                Padding="10,5"
+                Clicked="FecharButton_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
