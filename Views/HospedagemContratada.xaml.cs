@@ -20,4 +20,9 @@ public partial class HospedagemContratada : ContentPage
         // Retorna para a tela de contratação de hospedagem
         await Navigation.PopToRootAsync();
     }
+
+    private async void Button_Clicked_1(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ConfirmacaoPage());
+    }
 }

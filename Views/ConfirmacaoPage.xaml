@@ -8,16 +8,16 @@
         <!-- Mensagem de Confirmação -->
         <Label Text="Sua hospedagem foi concluída com sucesso!"
                TextColor="White"
-               FontSize="24"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+               FontFamily="Kalam"
+               FontSize="20"
+               HorizontalOptions="CenterAndExpand"/>
+               
 
         <!-- Botão de Fechar -->
         <Button Text="Fechar"
-                TextColor="White"
-                BackgroundColor="{StaticResource Accent}"
-                CornerRadius="25"
-                HorizontalOptions="Center"
+                TextColor="Black"
+                BackgroundColor="White"
+                VerticalOptions="End"
                 Padding="10,5"
                 Clicked="FecharButton_Clicked"/>
     </VerticalStackLayout>

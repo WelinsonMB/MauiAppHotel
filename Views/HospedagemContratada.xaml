@@ -73,10 +73,14 @@
                 </HorizontalStackLayout>
             </Frame>
             <Button Text="Voltar"
-                    TextColor="Black"
-                    BackgroundColor="White"
-                    HorizontalOptions="Center"
+                    TextColor="White"
+                    BackgroundColor="Red"
                     Clicked="Button_Clicked"/>
+
+            <Button Text="Concluir"
+                    TextColor="White"
+                    BackgroundColor="LightGreen"
+                    Clicked="Button_Clicked_1"/>      
 
         </VerticalStackLayout>
     </ScrollView>
